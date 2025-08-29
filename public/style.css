@@ -1,0 +1,18 @@
+body{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.chat{
+    width: 20%;
+    border-radius: 15px;
+    background-color: lightcyan;
+    padding: 8px;
+}
+.message{
+    padding: 8px;
+    border-radius: 15px;
+    background-color: lightblue;
+    color: blue;
+}

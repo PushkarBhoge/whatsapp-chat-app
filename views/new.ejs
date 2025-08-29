@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>New Char</h1>
+    <form action="/chats" method="post">
+      <div class="box">
+        <input type="text" name="from" placeholder="From" />
+        <input type="text" name="to" placeholder="to" />
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Message"
+        ></textarea>
+        <button style="width: 100px">send</button>
+      </div>
+    </form>
+  </body>
+</html>

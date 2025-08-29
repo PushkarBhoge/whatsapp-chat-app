@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit</title>
+  </head>
+  <style>
+    .box {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+  </style>
+  <body>
+    <h1>Edit your chat</h1>
+    <form method="post" action="/chats/<%= chat._id %>?_method=put">
+      <div class="box">
+        <textarea name="message" cols="30" rows="10" placeholder="Message">
+<%= chat.message %></textarea
+        >
+        <button style="width: 100px;">save</button>
+      </div>
+    </form>
+  </body>
+</html>
